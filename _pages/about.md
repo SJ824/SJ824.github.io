@@ -10,7 +10,7 @@ profile:
   image_circular: true
   more_info: >
     <p>Robotics & Mobility Laboratory</p>
-    <p>UNIST, Ulsan, South Korea</p>
+    <p>UNIST, South Korea</p>
 
 selected_papers: false
 social: false
@@ -29,11 +29,15 @@ latest_posts:
 I am a Ph.D. Candidate at the **Graduate School of Artificial Intelligence** in **UNIST**, advised by Prof. Jeong hwan Jeon. I am a member of the **Robotics & Mobility Laboratory**.
 
 My research fields include:
-* **Reinforcement Learning (RL) - Hierarchical RL / Curriculum RL / Actor Update Dataset Distribution Optimization**
-* **Autonomous Driving - Trajectory Planning / Vision to Control**
-* **End-to-End Learning (E2E)**
+* **Reinforcement Learning (RL) - Hierarchical RL / Dataset Distribution Optimizer**
+* **Autonomous Driving - Vision to Control / Learning based Planning**
+* **End-to-End Learning (E2E) - Image to Control / Data Distribution**
 
 <br>
-<a href="/assets/pdf/CV.pdf" target="_blank" style="font-size: 1.1em; font-weight: bold; color: #d9534f;">
+<a href="/assets/pdf/CV.pdf" target="_blank" style="font-size: 1.6em; font-weight: bold; color: #d9534f;">
   <i class="fas fa-file-pdf"></i> Curriculum Vitae (CV)
+</a>
+
+<a href="https://linkedin.com/in/sungjun-heo-02b4b3347" target="_blank" style="font-size: 1.6em; font-weight: bold; color: #0077b5;">
+  <i class="fab fa-linkedin"></i> LinkedIn
 </a>
