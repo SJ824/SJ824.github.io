@@ -17,7 +17,7 @@ related_posts: false
 <hr>
 
 <div style="text-align: center; margin-top: 30px;">
-    <img src="/assets/img/bts_1.jpg" width="500" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <img src="/assets/img/bts_1.png" width="500" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
     <br>
 </div>
 
