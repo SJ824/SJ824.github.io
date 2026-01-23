@@ -12,7 +12,7 @@ profile:
     <p>Robotics & Mobility Laboratory</p>
     <p>UNIST, South Korea</p>
 
-selected_papers: false
+selected_papers: true
 social: false
 
 announcements:
