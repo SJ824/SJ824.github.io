@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Passed the second round of the competition - 2025 Hyundai Motor Group's Autonomous Driving Challenge
+title: 🎉 Passed the second round of the competition - 2025 Hyundai Motor Group's Autonomous Driving Challenge
 date: 2024-10-14
 inline: false
 related_posts: false
