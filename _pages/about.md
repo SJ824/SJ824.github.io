@@ -29,8 +29,8 @@ latest_posts:
 I am a Ph.D. Candidate at the **Graduate School of Artificial Intelligence** in **UNIST**, advised by Prof. Jeong hwan Jeon. I am a member of the **Robotics & Mobility Laboratory**.
 
 My research fields include:
-* **Reinforcement Learning (RL) - Hierarchical RL / Dataset Distribution Optimizer**
 * **Autonomous Driving - Vision to Control / Learning based Planning**
+* **Reinforcement Learning (RL) - Hierarchical RL / Sim-to-Real Robotics RL**
 * **End-to-End Learning (E2E) - Image to Control / Data Distribution**
 
 <br>

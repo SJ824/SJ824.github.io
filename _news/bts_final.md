@@ -9,6 +9,8 @@ related_posts: false
 <div style="margin-bottom: 30px;">
     <h3>🎉 Grand Prize - Brain To Society, U-Challenge Festival !!</h3>
     <ul>
+        <li><strong>Position:</strong> Team Leader</li>
+        <li><strong>Project:</strong> Sensor-driven Hierarchical Information Fusion Transformer for BEV-based Maneuvering in Dense Multi-lane Environments</li>
         <li><strong>Media Coverage 1:</strong> <a href="https://www.kyosu.net/news/articleView.html?idxno=151545" target="_blank">Click to Link</a></li>
         <li><strong>Media Coverage 2:</strong> <a href="https://www.veritas-a.com/news/articleView.html?idxno=587840" target="_blank">Click to Link</a></li>
     </ul>
