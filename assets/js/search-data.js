@@ -426,7 +426,10 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2026_IV/";
-            },},{id: "projects-project-1",
+            },},{id: "news-starting-as-chief-of-laboratory-2026",
+          title: 'Starting as Chief of Laboratory(2026~)',
+          description: "",
+          section: "News",},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
           section: "Projects",handler: () => {
