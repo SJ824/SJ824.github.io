@@ -64,7 +64,11 @@ layout: default
       {% include selected_papers.liquid %}
     {% endif %}
 
-    <!-- Social -->
+    <br>
+    <h2>
+      <a href="{{ '/awards/' | relative_url }}" style="color: inherit; text-decoration: none;">Honors & Awards</a>
+    </h2>
+    {% include awards_list.liquid %}
     {% if page.social %}
       <div class="social">
         <div class="contact-icons">{% social_links %}</div>
