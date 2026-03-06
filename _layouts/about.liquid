@@ -42,34 +42,37 @@ layout: default
 
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
+      <hr style="border-top: 2px solid #cccccc;">
       <h2>
         <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
       </h2>
       {% include news.liquid limit=true %}
     {% endif %}
 
-    <!-- Latest posts -->
     {% if page.latest_posts and page.latest_posts.enabled %}
+      <hr style="border-top: 2px solid #cccccc;">
       <h2>
         <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
       </h2>
       {% include latest_posts.liquid %}
     {% endif %}
 
-    <!-- Selected papers -->
     {% if page.selected_papers %}
+      <hr style="border-top: 2px solid #cccccc;">
       <h2>
         <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Publications</a>
       </h2>
       {% include selected_papers.liquid %}
     {% endif %}
 
-    <br>
+    <hr style="border-top: 2px solid #cccccc;">
     <h2>
       <a href="{{ '/awards/' | relative_url }}" style="color: inherit; text-decoration: none;">Honors & Awards</a>
     </h2>
     {% include awards_list.liquid %}
+    
     {% if page.social %}
+      <hr style="border-top: 2px solid #cccccc;">
       <div class="social">
         <div class="contact-icons">{% social_links %}</div>
 
