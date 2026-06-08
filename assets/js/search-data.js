@@ -372,14 +372,8 @@ ninja.data = [{
             },},{id: "news-starting-research-intern-in-robotics-amp-amp-mobility-lab",
           title: 'Starting research intern in Robotics &amp;amp;amp; Mobility Lab',
           description: "",
-          section: "News",},{id: "news-undergraduate-research-award-top-5-all-graduation-students-research-title-autonomous-driving-waypoint-generation-based-on-vehicle-kinematics",
-          title: '🎉 Undergraduate Research Award (Top 5 / All graduation students), Research Title :...',
-          description: "",
           section: "News",},{id: "news-undergraduate-graduation-early-graduation-by-one-year",
           title: 'Undergraduate graduation(Early Graduation(by one year))',
-          description: "",
-          section: "News",},{id: "news-graduate-school-of-artificial-intelligence-admission",
-          title: 'Graduate School of Artificial Intelligence Admission',
           description: "",
           section: "News",},{id: "news-attend-the-35th-ieee-intelligent-vehicles-symposium-in-jeju",
           title: 'Attend the 35th IEEE Intelligent Vehicles Symposium in Jeju',
@@ -407,10 +401,7 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2025_IV/";
-            },},{id: "news-participated-in-the-bts-brain-to-society-program-under-the-future-mobility-category",
-          title: 'Participated in the BTS (Brain to Society) program under the Future Mobility category....',
-          description: "",
-          section: "News",},{id: "news-attending-36th-ieee-intelligent-vehicles-symposium-iv-2025",
+            },},{id: "news-attending-36th-ieee-intelligent-vehicles-symposium-iv-2025",
           title: 'Attending 36th IEEE Intelligent Vehicles Symposium(IV 2025)',
           description: "",
           section: "News",handler: () => {
@@ -423,16 +414,30 @@ ninja.data = [{
             },},{id: "news-special-privilege-for-2025-hyundai-motor-group-s-autonomous-driving-challenge-winners-autonomous-driving-field-trip-to-shanghai-and-guangzhou-china",
           title: 'Special privilege for 2025 Hyundai Motor Group’s Autonomous Driving Challenge winners: Autonomous driving...',
           description: "",
+          section: "News",},{id: "news-second-paper-has-been-accepted-in-37th-ieee-intelligent-vehicles-symposium-iv-2026-flagship-conference-of-ieee-itss",
+          title: '🎉 Second paper has been accepted in 37th IEEE Intelligent Vehicles Symposium(IV 2026)-Flagship...',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2026_IV/";
+            },},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2026_IV_Oral/";
+            },},{id: "news-undergraduate-research-award-top-5-all-graduation-students-research-title-autonomous-driving-waypoint-generation-based-on-vehicle-kinematics",
+          title: '🎉 Undergraduate Research Award (Top 5 / All graduation students), Research Title :...',
+          description: "",
+          section: "News",},{id: "news-graduate-school-of-artificial-intelligence-admission",
+          title: 'Graduate School of Artificial Intelligence Admission',
+          description: "",
+          section: "News",},{id: "news-participated-in-the-bts-brain-to-society-program-under-the-future-mobility-category",
+          title: 'Participated in the BTS (Brain to Society) program under the Future Mobility category....',
+          description: "",
           section: "News",},{id: "news-grand-prize-brain-to-society-u-challenge-festival-1-96-teams",
           title: '🎉 Grand Prize - Brain To Society, U-Challenge Festival (1 / 96 teams)...',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/bts_final/";
-            },},{id: "news-second-paper-has-been-accepted-in-37th-ieee-intelligent-vehicles-symposium-iv-2026-flagship-conference-of-ieee-itss",
-          title: '🎉 Second paper has been accepted in 37th IEEE Intelligent Vehicles Symposium(IV 2026)-Flagship...',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/2026_IV/";
             },},{id: "news-starting-as-chief-of-laboratory-2026",
           title: 'Starting as Chief of Laboratory(2026~)',
           description: "",
