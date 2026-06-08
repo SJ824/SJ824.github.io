@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Attending 36th IEEE Intelligent Vehicles Symposium(IV 2025)
+title: Attending 36th IEEE Intelligent Vehicles (IEEE IV 2025)
 date: 2025-06-24
 inline: false
 related_posts: false
