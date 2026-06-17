@@ -441,6 +441,16 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2026_IV_Oral/";
+            },},{id: "news-my-third-paper-has-been-accepted-in-ieee-rsj-international-conference-on-intelligent-robots-and-systems-2026-iros-major-conference-of-ieee-ras",
+          title: '🎉 My third paper has been accepted in IEEE/RSJ International Conference on Intelligent...',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2026_IROS_accept/";
+            },},{id: "news-my-4th-and-5th-papers-are-accepted-there-are-two-papers-have-been-accepted-in-ieee-international-conference-on-systems-man-and-cybernetics-2026-smc-flagship-conference-of-the-ieee-smc-society",
+          title: '🎉 My 4th and 5th papers are accepted / There are two papers...',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2026_SMC_accept/";
             },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
