@@ -29,11 +29,16 @@ latest_posts:
 I am a Ph.D. Candidate at the **Graduate School of Artificial Intelligence** in **UNIST**, advised by Prof. Jeong hwan Jeon. I am a member of the **Robotics & Mobility Laboratory**.
 
 My research fields include:
-* **Autonomous Driving - Vision to Control / Learning based Planning**
-* **Reinforcement Learning (RL) - Hierarchical RL / Sim-to-Real Robotics RL**
-* **End-to-End Learning (E2E) - Image to Control / Data Distribution**
+* **Autonomous Driving - E2E Driving / Learning based Trajectory Planning**
+* **Robotics - Learning based Manipulation / Multi-Agent RL**
+* **Reinforcement Learning - Hierarchical RL / Sim-to-Real Robotics RL**
+* **End-to-End Learning - Vision to Control / Data Distribution**
 
 <br>
+<a href="https://scholar.google.com/citations?user=roQ45I8AAAAJ&hl=ko" target="_blank" style="display: block; font-size: 1.6em; font-weight: bold; color: #4285f4; margin-bottom: 0.3em;">
+  <i class="ai ai-google-scholar-square"></i> Google Scholar
+</a>
+
 <a href="/assets/pdf/CV.pdf" target="_blank" style="font-size: 1.6em; font-weight: bold; color: #d9534f;">
   <i class="fas fa-file-pdf"></i> Curriculum Vitae (CV)
 </a>
