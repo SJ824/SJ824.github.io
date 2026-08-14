@@ -451,7 +451,10 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2026_SMC_accept/";
-            },},{id: "projects-project-1",
+            },},{id: "news-ieee-smc-2026-student-and-young-professional-travel-grant-has-been-accepted",
+          title: 'IEEE SMC 2026 Student and Young Professional Travel Grant has been accepted.',
+          description: "",
+          section: "News",},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
           section: "Projects",handler: () => {
