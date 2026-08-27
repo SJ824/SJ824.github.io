@@ -833,8 +833,82 @@ footer.sticky-bottom {
         }
       }
 
+      .publication-heading {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 0.5rem 0.75rem;
+      }
+
       .title {
+        position: relative;
+        flex: 1 1 24rem;
+        min-width: 0;
+        padding-left: 1.25rem;
         font-weight: bolder;
+
+        &::before {
+          position: absolute;
+          top: 0.7em;
+          left: 0;
+          width: 0.45rem;
+          height: 0.45rem;
+          border-radius: 50%;
+          background-color: var(--global-text-color);
+          content: "";
+          transform: translateY(-50%);
+        }
+      }
+
+      .title-links {
+        display: flex;
+        flex: 0 0 auto;
+        gap: 0.25rem;
+        padding-top: 0.05rem;
+
+        a.btn {
+          margin: 0;
+          padding: 0.1rem 0.45rem;
+          border: 1px solid var(--global-text-color);
+          border-radius: 0.2rem;
+          color: var(--global-text-color);
+          font-size: 0.68rem;
+          font-weight: 500;
+          line-height: 1.4;
+          white-space: nowrap;
+
+          &:hover {
+            border-color: var(--global-theme-color);
+            color: var(--global-theme-color);
+          }
+        }
+      }
+
+      @media (max-width: 575px) {
+        .title {
+          flex-basis: 100%;
+        }
+
+        .title-links {
+          margin-left: 1.25rem;
+        }
+      }
+
+      .author,
+      .periodical {
+        position: relative;
+        margin-left: 1.25rem;
+        padding-left: 1.25rem;
+      }
+
+      .publication-note {
+        color: rgba($red-color-dark, 0.72);
+      }
+
+      .links,
+      .badges,
+      .hidden {
+        margin-left: 1.25rem;
       }
 
       .author {
@@ -848,8 +922,8 @@ footer.sticky-bottom {
         }
 
         > em {
-          border-bottom: 1px solid;
           font-style: normal;
+          font-weight: 700;
         }
 
         > span.more-authors {
@@ -946,6 +1020,10 @@ footer.sticky-bottom {
       border-color: var(--global-highlight-color);
     }
   }
+}
+
+html[data-theme="dark"] .publications .publication-note {
+  color: rgba($red-color, 0.78);
 }
 
 // Rouge Color Customization
