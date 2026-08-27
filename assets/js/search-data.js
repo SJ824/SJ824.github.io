@@ -381,9 +381,6 @@ ninja.data = [{
           section: "News",},{id: "news-graduate-school-of-artificial-intelligence-admission",
           title: 'Graduate School of Artificial Intelligence Admission',
           description: "",
-          section: "News",},{id: "news-attend-the-35th-ieee-intelligent-vehicles-symposium-in-jeju",
-          title: 'Attend the 35th IEEE Intelligent Vehicles Symposium in Jeju',
-          description: "",
           section: "News",},{id: "news-starting-ai-innovation-park-internship-research-title-development-of-a-time-series-based-ai-model-for-power-prediction",
           title: 'Starting AI Innovation Park Internship, Research title : Development of a time-series-based AI...',
           description: "",
@@ -397,33 +394,27 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/hyun_1_1_2/";
-            },},{id: "news-highlight-3rd-place-in-preliminary-round-of-2025-hyundai-motor-group-39-s-autonomous-driving-challenge",
-          title: '🎉 (Highlight) !! 3rd place in Preliminary Round of 2025 Hyundai Motor Group&amp;#39;s...',
+            },},{id: "news-3rd-place-in-preliminary-round-of-2025-hyundai-motor-group-39-s-autonomous-driving-challenge",
+          title: '🎉 3rd place in Preliminary Round of 2025 Hyundai Motor Group&amp;#39;s Autonomous Driving...',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/hyun_1_2/";
-            },},{id: "news-highlight-my-first-paper-has-been-accepted-in-36th-ieee-intelligent-vehicles-ieee-iv-2025-flagship-conference-of-ieee-itss",
-          title: '🎉 (Highlight) !! My first paper has been accepted in 36th IEEE Intelligent...',
+            },},{id: "news-my-first-paper-has-been-accepted-in-36th-ieee-intelligent-vehicles-ieee-iv-2025-flagship-conference-of-ieee-itss",
+          title: '🎉 My first paper has been accepted in 36th IEEE Intelligent Vehicles (IEEE...',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2025_IV/";
-            },},{id: "news-participated-in-the-bts-brain-to-society-program-under-the-future-mobility-category",
-          title: 'Participated in the BTS (Brain to Society) program under the Future Mobility category....',
-          description: "",
-          section: "News",},{id: "news-attending-36th-ieee-intelligent-vehicles-ieee-iv-2025",
+            },},{id: "news-attending-36th-ieee-intelligent-vehicles-ieee-iv-2025",
           title: 'Attending 36th IEEE Intelligent Vehicles (IEEE IV 2025)',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2025_IV_attend/";
-            },},{id: "news-highlight-1st-place-in-2025-hyundai-motor-group-39-s-autonomous-driving-challenge",
-          title: '🎉 (Highlight) !! 1st place in 2025 Hyundai Motor Group&amp;#39;s Autonomous Driving Challenge...',
+            },},{id: "news-1st-place-in-2025-hyundai-motor-group-39-s-autonomous-driving-challenge",
+          title: '🎉 1st place in 2025 Hyundai Motor Group&amp;#39;s Autonomous Driving Challenge !!',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/hyun_2/";
-            },},{id: "news-special-privilege-for-2025-hyundai-motor-group-s-autonomous-driving-challenge-winners-autonomous-driving-field-trip-to-shanghai-and-guangzhou-china",
-          title: 'Special privilege for 2025 Hyundai Motor Group’s Autonomous Driving Challenge winners: Autonomous driving...',
-          description: "",
-          section: "News",},{id: "news-grand-prize-brain-to-society-u-challenge-festival-1-96-teams",
+            },},{id: "news-grand-prize-brain-to-society-u-challenge-festival-1-96-teams",
           title: '🎉 Grand Prize - Brain To Society, U-Challenge Festival (1 / 96 teams)...',
           description: "",
           section: "News",handler: () => {
@@ -433,10 +424,7 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2026_IV/";
-            },},{id: "news-starting-as-chief-of-laboratory-2026",
-          title: 'Starting as Chief of Laboratory(2026~)',
-          description: "",
-          section: "News",},{id: "news-top-8-5-of-all-accepted-papers-second-paper-has-been-selected-for-an-oral-presentation-at-the-2026-ieee-intelligent-vehicles-ieee-iv-2026",
+            },},{id: "news-top-8-5-of-all-accepted-papers-second-paper-has-been-selected-for-an-oral-presentation-at-the-2026-ieee-intelligent-vehicles-ieee-iv-2026",
           title: '🎉 (Top 8.5% of all Accepted Papers) Second paper has been selected for...',
           description: "",
           section: "News",handler: () => {
@@ -452,7 +440,7 @@ ninja.data = [{
           section: "News",handler: () => {
               window.location.href = "/news/2026_SMC_accept/";
             },},{id: "news-ieee-smc-2026-student-and-young-professional-travel-grant-has-been-accepted",
-          title: 'IEEE SMC 2026 Student and Young Professional Travel Grant has been accepted.',
+          title: '🎉 IEEE SMC 2026 Student and Young Professional Travel Grant has been accepted....',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
