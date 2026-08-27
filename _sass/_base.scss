@@ -244,6 +244,63 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+// News
+
+.news-toggle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  margin: -0.25rem auto 1rem;
+  padding: 0.4rem 0.9rem;
+  border: 0;
+  background: transparent;
+  color: var(--global-theme-color);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+
+  span {
+    color: inherit;
+  }
+
+  &:hover {
+    opacity: 0.75;
+    transform: translateY(2px);
+  }
+
+  &:focus-visible {
+    border-radius: 0.25rem;
+    outline: 2px solid var(--global-theme-color);
+    outline-offset: 2px;
+  }
+
+  &[aria-expanded="true"] .news-toggle-icon {
+    transform: rotate(180deg);
+  }
+}
+
+.news-toggle-icon {
+  width: 0;
+  height: 0;
+  border-right: 0.32rem solid transparent;
+  border-left: 0.32rem solid transparent;
+  border-top: 0.4rem solid currentColor;
+  transition: transform 0.25s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .news-toggle,
+  .news-toggle-icon {
+    transition: none;
+  }
+}
+
 // Navbar customization
 
 .navbar {

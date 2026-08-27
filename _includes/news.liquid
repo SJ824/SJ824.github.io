@@ -7,15 +7,27 @@
         style="max-height: 60vw"
       {% endif %}
     >
-      <table class="table table-sm table-borderless">
-        {% assign news = site.news | reverse %}
-        {% if include.limit and page.announcements.limit %}
-          {% assign news_limit = page.announcements.limit %}
-        {% else %}
-          {% assign news_limit = news_size %}
+      <table
+        class="table table-sm table-borderless"
+        {% if include.limit %}
+          id="news-list"
         {% endif %}
-        {% for item in news limit: news_limit %}
-          <tr>
+      >
+        {% assign news = site.news | reverse %}
+        {% if include.limit and page.announcements.initial_limit %}
+          {% assign news_initial_limit = page.announcements.initial_limit %}
+        {% elsif include.limit and page.announcements.limit %}
+          {% assign news_initial_limit = page.announcements.limit %}
+        {% else %}
+          {% assign news_initial_limit = news_size %}
+        {% endif %}
+        {% for item in news %}
+          <tr
+            {% if include.limit and forloop.index > news_initial_limit %}
+              data-news-extra
+              hidden
+            {% endif %}
+          >
             <th scope="row" style="width: 20%">{{ item.date | date: '%b %d, %Y' }}</th>
             <td>
               {% if item.inline %}
@@ -28,6 +40,24 @@
         {% endfor %}
       </table>
     </div>
+    {% if include.limit and news_size > news_initial_limit %}
+      <button
+        type="button"
+        class="news-toggle"
+        data-news-toggle
+        data-more-label="More information"
+        data-less-label="Show less"
+        aria-expanded="false"
+        aria-controls="news-list"
+        hidden
+      >
+        <span data-news-toggle-label>More information</span>
+        <span class="news-toggle-icon" aria-hidden="true"></span>
+      </button>
+      <noscript>
+        <a href="{{ '/news/' | relative_url }}">View all news</a>
+      </noscript>
+    {% endif %}
   {% else %}
     <p>No news so far...</p>
   {% endif %}

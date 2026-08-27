@@ -189,6 +189,10 @@
 <script defer src="{{ '/assets/js/common.js' | relative_url | bust_file_cache }}"></script>
 <script defer src="{{ '/assets/js/copy_code.js' | relative_url | bust_file_cache }}" type="text/javascript"></script>
 
+{% if page.announcements and page.announcements.enabled %}
+  <script defer src="{{ '/assets/js/news-toggle.js' | relative_url | bust_file_cache }}" type="text/javascript"></script>
+{% endif %}
+
 <!-- Jupyter Open External Links New Tab -->
 <script defer src="{{ '/assets/js/jupyter_new_tab.js' | relative_url | bust_file_cache }}"></script>
 
