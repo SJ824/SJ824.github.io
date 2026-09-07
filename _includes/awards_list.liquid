@@ -1,65 +1,83 @@
-<h2 class="year">2025</h2>
+{% assign award_years = site.data.awards | group_by: 'year' | sort: 'name' | reverse %}
+{% assign year_heading = include.year_heading | default: 'h3' %}
+{% assign award_heading = include.award_heading | default: 'h4' %}
+{% assign detail_heading = award_heading | remove: 'h' | plus: 1 | prepend: 'h' %}
 
-<div class="card mt-3">
-  <div class="p-3">
-    <h5 class="card-title font-weight-bold">🥇 1st Place - Hyundai Motor Group's Autonomous Driving Challenge</h5>
-    <h6 class="card-subtitle mb-2 text-muted">Hyundai Motor Group | Team FAST (UNIST)</h6>
-    <p class="card-text">Won 1st place in the autonomous driving competition by developing and implementing robust End-to-End autonomous driving algorithms.</p>
-    <div class="links">
-      <a href="https://www.fnnews.com/news/202509300910113492" target="_blank" class="btn btn-sm z-depth-0" role="button">📰 News Article</a>
-      <a href="https://www.straightnews.co.kr/news/articleView.html?idxno=282968" target="_blank" class="btn btn-sm z-depth-0" role="button">📰 News Article</a>
-      <a href="https://www.abcn.kr/news/articleView.html?idxno=83065" target="_blank" class="btn btn-sm z-depth-0" role="button">📰 News Article</a>
-    </div>
-  </div>
-</div>
-
-<div class="card mt-3">
-  <div class="p-3">
-    <h5 class="card-title font-weight-bold">🏆 Grand Prize - Brain To Society, U-Challenge Festival</h5>
-    <h6 class="card-subtitle mb-2 text-muted">UNIST | 1 / 96 teams</h6>
-    <p class="card-text">Position : Team leader / Project name : Sensor-driven Hierarchical Information Fusion Transformer for BEV-based Maneuvering in Dense Multi-lane Environments</p>
-    <div class="links">
-      <a href="https://www.kyosu.net/news/articleView.html?idxno=151545" target="_blank" class="btn btn-sm z-depth-0" role="button">📰 News Article</a>
-      <a href="https://www.veritas-a.com/news/articleView.html?idxno=587840" target="_blank" class="btn btn-sm z-depth-0" role="button">📰 News Article</a>
-    </div>
-  </div>
-</div>
-
-<div class="card mt-3">
-  <div class="p-3">
-    <h5 class="card-title font-weight-bold">🥉 3rd Place - Preliminary Round of Hyundai Motor Group's Autonomous Driving Challenge</h5>
-    <h6 class="card-subtitle mb-2 text-muted">Hyundai Motor Group | Team FAST (UNIST)</h6>
-    <p class="card-text">Won 3rd place in Preliminary Round of 2025 Hyundai Motor Group’s Autonomous Driving Challenge.</p>
-    <div class="links">
-      <a href="https://www.hyundaimotorgroup.com/ko/news/CONT0000000000172776" target="_blank" class="btn btn-sm z-depth-0" role="button">📰 News Article</a>
-    </div>
-  </div>
-</div>
-
-<div class="card mt-3">
-  <div class="p-3">
-    <h5 class="card-title font-weight-bold">🏆 Excellence Award | AI Tech Open Workshop</h5>
-    <h6 class="card-subtitle mb-2 text-muted">UNIST AI Tech Open Workshop | Team FAST</h6>
-    <p class="card-text">Research title : Development of an End-to-End Autonomous Driving Model Based on a High-Dimensional Simulator</p>
-  </div>
-</div>
-
-<hr>
-
-<h2 class="year">2023</h2>
-
-<div class="card mt-3">
-  <div class="p-3">
-    <h5 class="card-title font-weight-bold">📝 Undergraduate Research Award</h5>
-    <h6 class="card-subtitle mb-2 text-muted">Research Title : Autonomous Driving Waypoint-generation based on Vehicle Kinematics.</h6>
-  </div>
-</div>
-
-<h2 class="year">2021</h2>
-
-<div class="card mt-3">
-  <div class="p-3">
-    <h5 class="card-title font-weight-bold">📖 Academic Achievement Award</h5>
-    <h6 class="card-subtitle mb-2 text-muted">Undergraduate academic achievement excellence award in 2021</h6>
-  </div>
+<div class="awards">
+  {% for year in award_years %}
+    <section class="awards-year-group" aria-labelledby="awards-year-{{ year.name }}">
+      <{{ year_heading }} class="awards-year" id="awards-year-{{ year.name }}">{{ year.name }}</{{ year_heading }}>
+      <ul class="awards-list" role="list">
+        {% for award in year.items %}
+          <li class="award-entry">
+            <div class="award-heading">
+              {% if award.distinction %}
+                <span class="award-distinction">{{ award.distinction }}</span>
+              {% endif %}
+              <{{ award_heading }} class="award-title">
+                {% if award.distinction %}
+                  <span class="sr-only">{{ award.distinction }}: </span>
+                {% endif %}
+                {{ award.title }}
+              </{{ award_heading }}>
+              {% if award.prize %}
+                <span class="award-prize"><span class="sr-only">Award amount: </span>{{ award.prize }}</span>
+              {% endif %}
+            </div>
+            {% if award.organization or award.context %}
+              <p class="award-meta">
+                {% if award.organization %}
+                  <span>{{ award.organization }}</span>
+                {% endif %}
+                {% if award.context %}
+                  <span>{{ award.context }}</span>
+                {% endif %}
+              </p>
+            {% endif %}
+            {% if award.description %}
+              <p class="award-description">{{ award.description }}</p>
+            {% endif %}
+            {% if award.privilege %}
+              <p class="award-privilege"><span class="award-detail-label">Special privilege:</span> {{ award.privilege }}</p>
+            {% endif %}
+            {% if award.project %}
+              <p class="award-description"><span class="award-detail-label">{{ award.project_label | default: 'Project' }}:</span> {{ award.project }}</p>
+            {% endif %}
+            {% if award.links or award.project_details %}
+              <div class="award-links">
+                {% if award.links.size > 1 %}
+                  <details class="award-news" name="award-news">
+                    <summary class="award-news-toggle">
+                      News
+                      <span class="award-news-chevron" aria-hidden="true"></span>
+                    </summary>
+                    <ul class="award-news-sources" aria-label="News articles">
+                      {% for link in award.links %}
+                        <li>
+                          <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
+                            {{ link.label }}
+                            <span class="award-link-arrow" aria-hidden="true">↗</span>
+                            <span class="sr-only"> (opens in a new tab)</span>
+                          </a>
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  </details>
+                {% elsif award.links.size == 1 %}
+                  <a class="award-news-toggle" href="{{ award.links.first.url }}" target="_blank" rel="noopener noreferrer">
+                    News
+                    <span class="award-link-arrow" aria-hidden="true">↗</span>
+                    <span class="sr-only"> (opens in a new tab)</span>
+                  </a>
+                {% endif %}
+                {% if award.project_details %}
+                  {% include award_project.liquid project=award.project_details heading=detail_heading %}
+                {% endif %}
+              </div>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endfor %}
 </div>

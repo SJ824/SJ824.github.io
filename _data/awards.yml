@@ -1,0 +1,84 @@
+- year: 2026
+  title: IEEE SMC 2026 Student and Young Professional Travel Grant
+  prize: '$600'
+
+- year: 2025
+  distinction: 1st Place
+  title: Hyundai Motor Group's Autonomous Driving Challenge
+  prize: '$22,000'
+  privilege: Autonomous driving field trip
+  organization: Hyundai Motor Group
+  context: Team FAST (UNIST)
+  description: Developed and implemented robust End-to-End autonomous driving algorithms to win 1st place in the competition.
+  project_details:
+    overview: Development of a Camera-Only, Deployment-Oriented End-to-End Autonomous Driving Model and the entire pipeline from data collection to closed-loop validation.
+    progression:
+      - stage: Round 1 Qualifiers
+        teams: 16 Teams → 8 Teams
+      - stage: Round 1 Main Round
+        teams: 8 Teams → 6 Teams
+        result: 3rd Place
+      - stage: Round 2 Qualifiers
+        teams: 6 Teams → 4 Teams
+      - stage: FINAL
+        teams: 1st Place among 4 Finalists
+        result: Winner
+    technical:
+      - title: Full-Stack E2E Development
+        description: Developed an End-to-End autonomous driving model from scratch, covering the entire pipeline from architecture design to implementation.
+      - title: Robustness
+        description: Applied Imitation Learning and DAgger (Dataset Aggregation) to handle covariate shift and out-of-distribution scenarios.
+      - title: Data Pipeline
+        description: Collected and refined approximately 24 hours of driving data using multi-view cameras, IMU, and GPS.
+      - title: Consistency Enhancement
+        description: Developed specialized modules and loss functions to ensure prediction consistency between planning and control heads, addressing a key challenge in End-to-End models.
+      - title: Labeling Policy
+        description: Established a data labeling policy to enhance closed-loop driving stability.
+  links:
+    - label: Financial News
+      url: https://www.fnnews.com/news/202509300910113492
+    - label: Straight News
+      url: https://www.straightnews.co.kr/news/articleView.html?idxno=282968
+    - label: ABCN
+      url: https://www.abcn.kr/news/articleView.html?idxno=83065
+
+- year: 2025
+  distinction: Grand Prize
+  title: Brain To Society, U-Challenge Festival
+  prize: '$3,600'
+  organization: UNIST
+  context: Team leader · 1st out of 96 teams
+  project: Sensor-driven Hierarchical Information Fusion Transformer for BEV-based Maneuvering in Dense Multi-lane Environments
+  links:
+    - label: Kyosu
+      url: https://www.kyosu.net/news/articleView.html?idxno=151545
+    - label: Veritas-a
+      url: https://www.veritas-a.com/news/articleView.html?idxno=587840
+
+- year: 2025
+  distinction: 3rd Place
+  title: Hyundai Motor Group's Autonomous Driving Challenge
+  prize: '$3,600'
+  organization: Hyundai Motor Group
+  context: Team FAST (UNIST) · Round 1 main round
+  links:
+    - label: Hyundai Motor Group
+      url: https://www.hyundaimotorgroup.com/ko/news/CONT0000000000172776
+
+- year: 2025
+  distinction: Excellence Award
+  title: AI Tech Open Workshop
+  prize: '$2,400'
+  organization: UNIST
+  context: Team FAST
+  project_label: Research
+  project: Development of an End-to-End Autonomous Driving Model Based on a High-Dimensional Simulator
+
+- year: 2023
+  title: Undergraduate Research Award
+  project_label: Research
+  project: Autonomous Driving Waypoint-generation based on Vehicle Kinematics
+
+- year: 2021
+  title: Academic Achievement Award
+  description: Undergraduate academic achievement excellence award.

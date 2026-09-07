@@ -1,13 +1,10 @@
 ---
 layout: page
-title: awards
+title: Awards and Achievements
+description: Awards, achievements, and travel grants I have received.
 permalink: /awards/
 nav: true
 nav_order: 4
 ---
 
-Honors, awards, and scholarships I have received.
-
-<hr>
-
-{% include awards_list.liquid %}
+{% include awards_list.liquid year_heading='h2' award_heading='h3' %}

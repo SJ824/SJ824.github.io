@@ -1,0 +1,42 @@
+<details class="award-project">
+  <summary class="award-news-toggle">
+    Project Details
+    <span class="award-news-chevron" aria-hidden="true"></span>
+  </summary>
+  <div class="award-project-panel">
+    <section class="award-project-section">
+      <{{ include.heading }} class="award-project-heading">Overview</{{ include.heading }}>
+      <p class="award-project-overview">{{ include.project.overview }}</p>
+    </section>
+
+    <section class="award-project-section">
+      <{{ include.heading }} class="award-project-heading">Competition Progression</{{ include.heading }}>
+      <ol class="award-progression" role="list">
+        {% for stage in include.project.progression %}
+          <li class="award-stage{% if forloop.last %} award-stage-final{% endif %}">
+            <span class="award-stage-number" aria-hidden="true">{{ forloop.index }}</span>
+            <div class="award-stage-content">
+              <p class="award-stage-name">{{ stage.stage }}</p>
+              <p class="award-stage-teams">{{ stage.teams }}</p>
+              {% if stage.result %}
+                <span class="award-stage-result">{{ stage.result }}</span>
+              {% endif %}
+            </div>
+          </li>
+        {% endfor %}
+      </ol>
+    </section>
+
+    <section class="award-project-section">
+      <{{ include.heading }} class="award-project-heading">Technical Details</{{ include.heading }}>
+      <dl class="award-technical">
+        {% for detail in include.project.technical %}
+          <div class="award-technical-item">
+            <dt>{{ detail.title }}</dt>
+            <dd>{{ detail.description }}</dd>
+          </div>
+        {% endfor %}
+      </dl>
+    </section>
+  </div>
+</details>
