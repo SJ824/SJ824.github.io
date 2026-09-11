@@ -336,6 +336,7 @@ filtered_bibtex_keywords:
     poster,
     preview,
     selected,
+    show_all_authors,
     slides,
     supp,
     video,
