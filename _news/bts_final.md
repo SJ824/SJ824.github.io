@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 🎉 Grand Prize - Brain To Society, U-Challenge Festival (1 / 96 teams)
+highlights: ["Grand Prize", "1 / 96 teams"]
 date: 2025-12-05
 inline: false
 related_posts: false

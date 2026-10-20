@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 🎉 3rd place in Preliminary Round of 2025 Hyundai Motor Group's Autonomous Driving Challenge !!
+highlights: ["3rd place"]
 date: 2025-03-27
 inline: false
 related_posts: false

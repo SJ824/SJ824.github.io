@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 🎉 (Top 8.5% of all Accepted Papers) Second paper has been selected for an Oral Presentation at the 2026 IEEE Intelligent Vehicles (IEEE IV 2026)
+highlights: ["Top 8.5% of all Accepted Papers", "Oral Presentation"]
 date: 2026-05-06
 inline: false
 related_posts: false

@@ -11,6 +11,9 @@ layout: default
         {{ site.title }}
       {% endif %}
     </h1>
+    {% if page.email %}
+      <p class="profile-email"><strong>email : <a href="mailto:{{ page.email }}">{{ page.email }}</a></strong></p>
+    {% endif %}
     <p class="desc">{{ page.subtitle }}</p>
   </header>
 

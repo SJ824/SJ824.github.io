@@ -4,6 +4,10 @@
 
 // Typography
 
+html {
+  font-size: 93.75%; // 15px at the default browser size, scaling rem-based text together.
+}
+
 p,
 h1,
 h2,
@@ -46,6 +50,30 @@ table.table a {
 
   &:hover:after :not(.nav-item.dropdown) {
     width: 100%;
+  }
+}
+
+// Keep the introduction links blue, including their bold text.
+a.intro-link {
+  color: #1a73c9;
+
+  strong {
+    color: inherit;
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: #155a9e;
+    text-decoration: underline;
+  }
+}
+
+html[data-theme="dark"] a.intro-link {
+  color: #8ab4f8;
+
+  &:hover,
+  &:focus-visible {
+    color: #aecbfa;
   }
 }
 
@@ -195,6 +223,43 @@ ul.task-list input[type="checkbox"] {
 
 // Profile
 
+.profile-email {
+  margin-bottom: 0.25rem;
+
+  a {
+    color: inherit;
+  }
+}
+
+.profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1.25rem;
+  margin: 1.25rem 0;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  .scholar-link {
+    color: #4285f4;
+  }
+
+  .cv-link {
+    color: #d9534f;
+  }
+
+  .linkedin-link {
+    color: #0077b5;
+  }
+}
+
 .profile {
   width: 100%;
 
@@ -246,6 +311,67 @@ ul.task-list input[type="checkbox"] {
 
 // News
 
+.news {
+  color: var(--global-text-color);
+
+  a:not(.news-detail-link) {
+    color: inherit;
+  }
+}
+
+.news .table a.news-detail-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.35rem;
+  padding: 0.1rem 0.35rem;
+  border: 1px solid #c4dff5;
+  border-radius: 0.25rem;
+  background-color: #eef6ff;
+  color: #1a73c9;
+  font-size: 0.65rem;
+  line-height: 1.2;
+  vertical-align: baseline;
+
+  span {
+    color: inherit;
+  }
+
+  &:hover,
+  &:focus-visible {
+    border-color: #1a73c9;
+    background-color: #dbeeff;
+    color: #155a9e;
+    text-decoration: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid #1a73c9;
+    outline-offset: 2px;
+  }
+}
+
+.news .table {
+  margin-bottom: 0.5rem;
+
+  th,
+  td {
+    padding-top: 0.15rem;
+    padding-bottom: 0.15rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .news-title {
+    color: inherit;
+    font-weight: 400;
+
+    strong {
+      font-weight: 700;
+    }
+  }
+}
+
 .news-toggle {
   display: flex;
   flex-direction: column;
@@ -255,7 +381,7 @@ ul.task-list input[type="checkbox"] {
   padding: 0.4rem 0.9rem;
   border: 0;
   background: transparent;
-  color: var(--global-theme-color);
+  color: var(--global-text-color);
   font-size: 0.78rem;
   font-weight: 600;
   letter-spacing: 0.08em;
@@ -902,7 +1028,8 @@ footer.sticky-bottom {
       }
 
       .publication-note {
-        color: rgba($red-color-dark, 0.72);
+        color: $red-color-dark;
+        font-weight: 700;
       }
 
       .links,
@@ -922,6 +1049,7 @@ footer.sticky-bottom {
         }
 
         > em {
+          color: #1676a8;
           font-style: normal;
           font-weight: 700;
         }
@@ -1022,8 +1150,12 @@ footer.sticky-bottom {
   }
 }
 
-html[data-theme="dark"] .publications .publication-note {
-  color: rgba($red-color, 0.78);
+html[data-theme="dark"] .publications ol.bibliography .author > em {
+  color: #7dd3fc;
+}
+
+html[data-theme="dark"] .publications ol.bibliography .publication-note {
+  color: #ff6b6b;
 }
 
 // Rouge Color Customization

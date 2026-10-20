@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 🎉 1st place in 2025 Hyundai Motor Group's Autonomous Driving Challenge !!
+highlights: ["1st place"]
 date: 2025-09-30
 inline: false
 related_posts: false

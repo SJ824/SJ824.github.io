@@ -23,6 +23,38 @@
               {% if award.prize %}
                 <span class="award-prize"><span class="sr-only">Award amount: </span>{{ award.prize }}</span>
               {% endif %}
+              {% if award.links or award.project_details %}
+                <div class="award-links">
+                  {% if award.links.size > 1 %}
+                    <details class="award-news" name="award-news">
+                      <summary class="award-news-toggle">
+                        News
+                        <span class="award-news-chevron" aria-hidden="true"></span>
+                      </summary>
+                      <ul class="award-news-sources" aria-label="News articles">
+                        {% for link in award.links %}
+                          <li>
+                            <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
+                              {{ link.label }}
+                              <span class="award-link-arrow" aria-hidden="true">↗</span>
+                              <span class="sr-only"> (opens in a new tab)</span>
+                            </a>
+                          </li>
+                        {% endfor %}
+                      </ul>
+                    </details>
+                  {% elsif award.links.size == 1 %}
+                    <a class="award-news-toggle" href="{{ award.links.first.url }}" target="_blank" rel="noopener noreferrer">
+                      News
+                      <span class="award-link-arrow" aria-hidden="true">↗</span>
+                      <span class="sr-only"> (opens in a new tab)</span>
+                    </a>
+                  {% endif %}
+                  {% if award.project_details %}
+                    {% include award_project.liquid project=award.project_details heading=detail_heading %}
+                  {% endif %}
+                </div>
+              {% endif %}
             </div>
             {% if award.organization or award.context %}
               <p class="award-meta">
@@ -42,38 +74,6 @@
             {% endif %}
             {% if award.project %}
               <p class="award-description"><span class="award-detail-label">{{ award.project_label | default: 'Project' }}:</span> {{ award.project }}</p>
-            {% endif %}
-            {% if award.links or award.project_details %}
-              <div class="award-links">
-                {% if award.links.size > 1 %}
-                  <details class="award-news" name="award-news">
-                    <summary class="award-news-toggle">
-                      News
-                      <span class="award-news-chevron" aria-hidden="true"></span>
-                    </summary>
-                    <ul class="award-news-sources" aria-label="News articles">
-                      {% for link in award.links %}
-                        <li>
-                          <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
-                            {{ link.label }}
-                            <span class="award-link-arrow" aria-hidden="true">↗</span>
-                            <span class="sr-only"> (opens in a new tab)</span>
-                          </a>
-                        </li>
-                      {% endfor %}
-                    </ul>
-                  </details>
-                {% elsif award.links.size == 1 %}
-                  <a class="award-news-toggle" href="{{ award.links.first.url }}" target="_blank" rel="noopener noreferrer">
-                    News
-                    <span class="award-link-arrow" aria-hidden="true">↗</span>
-                    <span class="sr-only"> (opens in a new tab)</span>
-                  </a>
-                {% endif %}
-                {% if award.project_details %}
-                  {% include award_project.liquid project=award.project_details heading=detail_heading %}
-                {% endif %}
-              </div>
             {% endif %}
           </li>
         {% endfor %}

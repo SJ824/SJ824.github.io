@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 🎉 My 4th and 5th papers are accepted / There are two papers have been accepted in IEEE International Conference on Systems, Man, and Cybernetics (2026 SMC) - Flagship conference of the IEEE SMC Society
+highlights: ["4th and 5th papers", "2026 SMC"]
 date: 2026-06-17
 inline: false
 related_posts: false

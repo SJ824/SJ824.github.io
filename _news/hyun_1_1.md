@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 🎉 Passed the first round of the competition - 2025 Hyundai Motor Group's Autonomous Driving Challenge
+highlights: ["Passed the first round"]
 date: 2024-10-14
 inline: false
 related_posts: false

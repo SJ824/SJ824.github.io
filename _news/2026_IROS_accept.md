@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 🎉 My third paper has been accepted in IEEE/RSJ International Conference on Intelligent Robots and Systems (2026 IROS)-(Major Conference of IEEE RAS)
+highlights: ["third paper", "2026 IROS"]
 date: 2026-06-17
 inline: false
 related_posts: false

@@ -33,7 +33,19 @@
               {% if item.inline %}
                 {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
               {% else %}
-                <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+                {% assign news_title = item.title | escape %}
+                {% for phrase in item.highlights %}
+                  {% assign escaped_phrase = phrase | escape %}
+                  {% capture highlighted_phrase %}<strong>{{ escaped_phrase }}</strong>{% endcapture %}
+                  {% assign news_title = news_title | replace: escaped_phrase, highlighted_phrase %}
+                {% endfor %}
+                <span class="news-title">{{ news_title }}</span>
+                <a
+                  class="news-detail-link"
+                  href="{{ item.url | relative_url }}"
+                  aria-label="View details: {{ item.title | escape }}"
+                  title="View details"
+                ><span aria-hidden="true">▶</span></a>
               {% endif %}
             </td>
           </tr>
