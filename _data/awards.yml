@@ -1,4 +1,16 @@
 - year: 2026
+  distinction: First Prize
+  title: AI Technology Open Workshop
+  organization: UNIST
+  context: AI Top Conference Poster Session
+  project_label: Presentation
+  project: 'SHIFT-RL: Sensor-driven Hierarchical Information Fusion Transformer for BEV-based Maneuvering in Dense Multi-lane Environments'
+  links:
+    - label: News and photos
+      url: /news/2026-ai-technology-open-workshop/
+
+- year: 2026
+  distinction: Grant
   title: IEEE SMC 2026 Student and Young Professional Travel Grant
   prize: '$600'
 

@@ -36,7 +36,7 @@ My research fields include:
   <a class="scholar-link" href="https://scholar.google.com/citations?user=roQ45I8AAAAJ&hl=ko" target="_blank" rel="noopener noreferrer">
     <i class="ai ai-google-scholar-square" aria-hidden="true"></i> Google Scholar
   </a>
-  <a class="cv-link" href="{{ '/assets/pdf/CV.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">
+  <a class="cv-link" href="{{ '/assets/pdf/CV.pdf' | relative_url | bust_file_cache }}" target="_blank" rel="noopener noreferrer">
     <i class="fas fa-file-pdf" aria-hidden="true"></i> CV
   </a>
   <a class="linkedin-link" href="https://linkedin.com/in/sungjun-heo-02b4b3347" target="_blank" rel="noopener noreferrer">

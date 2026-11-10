@@ -6,10 +6,13 @@
     <div class="publication-heading">
       <!-- Title -->
       <div class="title">{{ entry.title }}</div>
-      {% if entry.doi or entry.bibtex_show %}
+      {% if entry.doi or entry.arxiv or entry.bibtex_show %}
         <div class="title-links">
           {% if entry.doi %}
             <a href="https://doi.org/{{ entry.doi }}" class="btn z-depth-0" role="button">Paper</a>
+          {% endif %}
+          {% if entry.arxiv %}
+            <a href="https://arxiv.org/abs/{{ entry.arxiv }}" class="btn z-depth-0" role="button">arXiv</a>
           {% endif %}
           {% if entry.bibtex_show %}
             <a class="bibtex btn z-depth-0" role="button">BIB</a>
@@ -164,9 +167,6 @@
       {% endif %}
       {% if entry.abstract %}
         <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-      {% endif %}
-      {% if entry.arxiv %}
-        <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
       {% endif %}
       {% if entry.hal %}
         <a href="https://hal.science/{{ entry.hal }}" class="btn btn-sm z-depth-0" role="button">HAL</a>
