@@ -73,7 +73,9 @@
               <p class="award-privilege"><span class="award-detail-label">Special privilege:</span> {{ award.privilege }}</p>
             {% endif %}
             {% if award.project %}
-              <p class="award-description"><span class="award-detail-label">{{ award.project_label | default: 'Project' }}:</span> {{ award.project }}</p>
+              <p class="award-description">
+                <span class="award-detail-label">{{ award.project_label | default: 'Project' }}:</span> {{ award.project }}
+              </p>
             {% endif %}
           </li>
         {% endfor %}

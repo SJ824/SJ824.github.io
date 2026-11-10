@@ -4,7 +4,7 @@
   organization: UNIST
   context: AI Top Conference Poster Session
   project_label: Presentation
-  project: 'SHIFT-RL: Sensor-driven Hierarchical Information Fusion Transformer for BEV-based Maneuvering in Dense Multi-lane Environments'
+  project: "SHIFT-RL: Sensor-driven Hierarchical Information Fusion Transformer for BEV-based Maneuvering in Dense Multi-lane Environments"
   links:
     - label: News and photos
       url: /news/2026-ai-technology-open-workshop/
@@ -12,12 +12,12 @@
 - year: 2026
   distinction: Grant
   title: IEEE SMC 2026 Student and Young Professional Travel Grant
-  prize: '$600'
+  prize: "$600"
 
 - year: 2025
   distinction: 1st Place
   title: Hyundai Motor Group's Autonomous Driving Challenge
-  prize: '$22,000'
+  prize: "$22,000"
   privilege: Autonomous driving field trip
   organization: Hyundai Motor Group
   context: Team FAST (UNIST)
@@ -57,7 +57,7 @@
 - year: 2025
   distinction: Grand Prize
   title: Brain To Society, U-Challenge Festival
-  prize: '$3,600'
+  prize: "$3,600"
   organization: UNIST
   context: Team leader · 1st out of 96 teams
   project: Sensor-driven Hierarchical Information Fusion Transformer for BEV-based Maneuvering in Dense Multi-lane Environments
@@ -70,7 +70,7 @@
 - year: 2025
   distinction: 3rd Place
   title: Hyundai Motor Group's Autonomous Driving Challenge
-  prize: '$3,600'
+  prize: "$3,600"
   organization: Hyundai Motor Group
   context: Team FAST (UNIST) · Round 1 main round
   links:
@@ -80,7 +80,7 @@
 - year: 2025
   distinction: Excellence Award
   title: AI Tech Open Workshop
-  prize: '$2,400'
+  prize: "$2,400"
   organization: UNIST
   context: Team FAST
   project_label: Research

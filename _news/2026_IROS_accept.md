@@ -6,6 +6,7 @@ date: 2026-06-17
 inline: false
 related_posts: false
 ---
+
 <div style="margin-bottom: 30px;">
     <h3> "	SHIFT-RL: Sensor-driven Hierarchical Information Fusion Transformer for BEV-based Maneuvering in Dense Multi-lane Environments" paper has been accepted at IEEE/RSJ International Conference on Intelligent Robots and Systems (2026 IROS)-Major Conference of IEEE RAS</h3>
     <ul>

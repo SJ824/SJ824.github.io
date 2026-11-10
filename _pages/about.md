@@ -27,10 +27,11 @@ latest_posts:
 I am a Ph.D. Candidate at the [**Graduate School of Artificial Intelligence**](https://aigs.unist.ac.kr/eng/){: .intro-link } in [**UNIST**](https://www.unist.ac.kr/unist/index.do){: .intro-link }, advised by Prof. Jeong hwan Jeon. I am a member of the [**Robotics & Mobility Laboratory**](https://rml-unist.notion.site/){: .intro-link }.
 
 My research fields include:
-* **Autonomous Driving - E2E Driving / Learning based Trajectory Planning**
-* **Robotics - Learning based Manipulation / Multi-Agent RL**
-* **Reinforcement Learning - Hierarchical RL / Sim-to-Real Robotics RL**
-* **End-to-End Learning - Vision to Control / Data Distribution**
+
+- **Autonomous Driving - E2E Driving / Learning based Trajectory Planning**
+- **Robotics - Learning based Manipulation / Multi-Agent RL**
+- **Reinforcement Learning - Hierarchical RL / Sim-to-Real Robotics RL**
+- **End-to-End Learning - Vision to Control / Data Distribution**
 
 <div class="profile-links">
   <a class="scholar-link" href="https://scholar.google.com/citations?user=roQ45I8AAAAJ&hl=ko" target="_blank" rel="noopener noreferrer">
