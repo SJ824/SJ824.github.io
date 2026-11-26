@@ -153,8 +153,8 @@
     {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
     <div class="periodical">
       {{ periodical | strip }}
-      {% if entry.note != blank %}
-        <span class="publication-note"> · {{ entry.note | strip }}</span>
+      {% if entry.presentation != blank %}
+        <span class="publication-note"> · {{ entry.presentation | strip }}</span>
       {% endif %}
     </div>
 
